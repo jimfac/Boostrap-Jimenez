@@ -3,196 +3,17 @@
     padding:0;
 }
 
-body{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "section"
-    "footer";
-}
-  
-header {  
-    background-color: rgb(184, 181, 181);
-    margin: 0%;
-    padding-left: 14px;
-    display: grid;
-    grid-template-areas: 
-    "empresa lista";
-    grid-template-columns: 1fr 6fr;
-    grid-area: header;
-      
-}
 
-.empresa {
-    font-family:'Lobster Two',cursive;
-    font-size: 50px;
-    color:rgb(245, 238, 239) ;
-    font-weight:bold ;
-    grid-area:empresa;
-    margin-left: 100px;
-    }
+
+main {
     
-ul {
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(112, 112, 255);
-    font-size: 14px;
-    font-weight: 600;
-    font-style: normal;
-    text-align:left;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    grid-area:lista;
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-right: 100px ;
-    width: 600px;
-
-}
-
-.pages:hover{
-    transform:scale(1.5,2);
+    background-image:url("../assets/business-man-5443436_1920.jpg");
     
 }
-
-section {
-    text-align: center;
-    background-image:url("../assets/fondoinstitucional.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-color:white;
-    height: 550px;
-    width:100%;
-    margin-right: 0; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: section;
-    
+.empresa{
+    padding-bottom: 400px; 
 }
-
-.imagen{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.imagen img {
-    height: 250px;
-    width: 250px;
-    border:solid grey 2px;
-    margin: 30px 20px 20px 20px;
-    animation-name: aparecer; 
-    animation-duration: 10s;  
-    animation-iteration-count: infinite;
-}
-
-.lema {
-    font-family:'Lobster Two', cursive;
-    font-size: 40px;
-    color: rgb(136, 3, 3);
-    font-style: normal;
-}
-
-#team {
-    font-family:'Lobster Two', cursive;
-    font-size: 25px;
-    color: rgb(253, 48, 48);
-    font-style:inherit;
-    font-weight: 700;
-}
-
-footer {
-    background-color: grey;
-    width:97%;
-    margin-right: 0;
-    padding: 10px 20px 20px ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-area: footer;
-    grid-template-areas: 
-    "rrss telefono direccion";
-  
-    
-}
-.rrss{
-    grid-area: rrss;
-    
-}
-.telefono{
-    grid-area: telefono;
-}
-.direccion{
-    grid-area: direccion;
-}
-
-.titulo-footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px ;
-    font-style:normal;
-    font-weight: bold;
-    color:  whitesmoke;
-    text-align: center;  
-   
-}
-
-.contenido-footer{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 15x ;
-    font-style:normal;
-    font-weight:bold;
-    color:  rgb(1, 1, 12);
-    text-align: center;
-    margin-top: 10px; 
-
-
-}
-/* MEDIA QUERIE */
-@media screen and (max-width:480px){
-    
-    ul{
-        display: flex;
-        flex-direction: column;
-        justify-content:left;
-        align-items: flex-end;
-        
-    }
-    section{
-        height: 700px;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-               
-    }
-       
-    footer{
-       height:300px;
-       display: flex;
-       flex-direction: column;
-       justify-content: start;
-       align-items: center;
-       row-gap: 30px;
-         
-   }  
-/* MQ-CONTACTANOS */
-   .contacto{
-    font-size: 2rem;
-    }  
-    form{
-    width: 50%;
-    height: 500px;
-    }
-    .recuadro {
-        animation-name: aparecer; 
-        animation-duration: 10s;  
-        animation-iteration-count: infinite;
-    }      
-    
-}
+ 
 
 /* ANIMACIONES */
 
@@ -207,63 +28,47 @@ footer {
 
 
 /* SERVICIOS EMPRESARIALES */
-.serviciosEmpresariales{
-    height:100%
-}
-
-.servicios {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1,5rem;
-    font-style: inherit;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    margin:10px 10px 10px 10px;
-    padding: 10px;
-    border: solid grey 2px;
-    background-color: mediumslateblue;
-    
-    
-    
-}
-.explicacion {
-    font-family:'Lobster Two', cursive;
-    font-size: 1rem;
-    font-style:normal;
-    color: rgb(34, 33, 33);
-    text-align:center;
-    font-weight:bolder;
-    margin:10px 30px 30px 30px ;
-    border: solid grey 2px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
-
-}
-
-.animaciones-se:hover{
+.card:hover{
+   
     transform: scale(1.15);
     transition-property: all;
-    transition-duration: 2s;   
+    transition-duration: 2s;
+}
+.titulo-se{
+    text-align: center;
+    color: rgb(2, 69, 71);
+    font-family:  Helvetica, sans-serif;
+    font-weight:bold;
 
 }
 
 /*QUIENES SOMOS*/
 
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.lema{
+    color: rgb(2, 69, 71);
+    font-weight:bold;
+}
 
 
 .descripcion{
-    font-family:'Lobster Two', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-style:normal;
-    color: rgb(34, 33, 33);
+    color:rgb(65, 1, 14);
     text-align:center;
-    font-weight:bolder;
+    font-weight:bold;
 }
 
 .imgEquipo{
-
-    height: 220px;
-    width: 220px;
+    margin: 10px;
+   
     border:solid grey 2px;
     text-align: center;
     animation-name: aparecer; 
@@ -275,22 +80,25 @@ footer {
     
 
 .contacto{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1,5rem;
     font-style: inherit;
-    color: rgb(136, 3, 3);
+    color: rgb(2, 69, 71);
     text-align: center;
     font-weight: bold;
     margin-bottom: 15px;     
 }
 
-form {
+.contacto-web{
     border: 1px solid grey;
-    margin: 10px 10px 10px 10px;
+    margin-top:0px;
+    margin-left: 400px;
+    margin-bottom:0;
     padding: 10px;
     width: max-content;
     text-align: justify;
     background-color: snow;
+    
 }
 .datos {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -300,27 +108,22 @@ form {
 }
 
 /* UBICACION */
-.section-ub{
-    text-align: center;
-    background-image:url("../assets/fondoinstitucional.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-color:white;
-    height: 550px;
-    width:100%;
-    grid-area: section;
+
+.direccion{
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 15px;
 }
 .ubicacion {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: inherit;
-    color: rgb(136, 3, 3);
+    color: rgb(2, 69, 71);
     text-align: center;
     font-weight: bold;
     margin-bottom: 15px;
+    margin-top: 15px;
 
 }
